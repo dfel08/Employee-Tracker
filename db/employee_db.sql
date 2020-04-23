@@ -27,23 +27,23 @@ CREATE TABLE employee (
   first_name varchar(30) NOT NULL,
   last_name VARCHAR(30) NOT NULL,
   roles_id INT NOT NULL,
-  manager_id INT,
+  manager_id INT NULL,
   PRIMARY KEY(id),
   FOREIGN KEY (roles_id) REFERENCES roles(id),
   FOREIGN KEY (manager_id) REFERENCES employee(id)
 );
 
-INSERT INTO department (name)
+INSERT INTO department (dept_name)
 VALUES ("Engineering");
-INSERT INTO department (name)
+INSERT INTO department (dept_name)
 VALUES ("Sales");
-INSERT INTO department (name)
+INSERT INTO department (dept_name)
 VALUES ("Legal");
-INSERT INTO department (name)
+INSERT INTO department (dept_name)
 VALUES ("IT");
-INSERT INTO department (name)
+INSERT INTO department (dept_name)
 VALUES ("Finance");
-INSERT INTO department (name)
+INSERT INTO department (dept_name)
 VALUES ("Human Resources") ;
 INSERT INTO roles (title, salary, department_id)
 VALUES ("Web Developer",100000,1);
@@ -95,6 +95,3 @@ INSERT INTO roles (title, salary, department_id)
 VALUES ("Human Resources Manager",120000,6);
 INSERT INTO roles (title, salary, department_id)
 VALUES ("Chief Human Resources Officer",180000,6);
-INSERT INTO employee (first_name, last_name, roles_id)
-VALUES ("No", "Manager",0);
-INSERT INTO employee (first_name, last_name, roles_id)
