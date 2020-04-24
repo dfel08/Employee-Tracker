@@ -17,8 +17,8 @@ CREATE TABLE department (
 CREATE TABLE roles (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(30) NOT NULL,
-    salary decimal,
-    department_id int,
+    salary DECIMAL,
+    department_id INT,
     FOREIGN KEY (department_id) REFERENCES department(id)
 );
 
@@ -95,3 +95,9 @@ INSERT INTO roles (title, salary, department_id)
 VALUES ("Human Resources Manager",120000,6);
 INSERT INTO roles (title, salary, department_id)
 VALUES ("Chief Human Resources Officer",180000,6);
+INSERT INTO employee (first_name, last_name, roles_id)
+VALUES ("John", "Doe",2);
+INSERT INTO employee (first_name, last_name, roles_id)
+VALUES ("Jane", "Doe",1);
+INSERT INTO employee (first_name, last_name, roles_id)
+VALUES ("Elliot", "Alderson",6);
