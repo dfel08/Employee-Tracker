@@ -1,0 +1,25 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "Project done while attending UC-Berkeley Extension Coding Bootcamp. This is an terminal app that uses various questions to keep track of various employees and their managers, salaries, departments, and roles within the company.",
+  "main": "index.js",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.1.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfel08/Employee-Tracker.git"
+  },
+  "author": "Dan Fellows",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfel08/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/dfel08/Employee-Tracker#readme"
+}
